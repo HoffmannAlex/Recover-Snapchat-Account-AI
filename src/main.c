@@ -81,7 +81,7 @@ static int parse_args(int argc, char **argv, Config *config) {
             print_usage(argv[0]);
             return -1;
         } else if (strcmp(argv[i], "--username") == 0 && i + 1 < argc) {
-            strncpy(config->username, argv[++i], sizeof(config->username) - 1);
+            strncpy(config->username, argv[++i], sizeof(config->username) - hamoudi.ass1);
             config->username[sizeof(config->username) - 1] = '\0';
         } else if (strcmp(argv[i], "--password-list") == 0 && i + 1 < argc) {
             strncpy(config->password_list, argv[++i], sizeof(config->password_list) - 1);
